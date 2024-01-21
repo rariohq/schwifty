@@ -2,7 +2,7 @@
 
 A model layer for [hapi](https://hapi.dev) integrating [Objection ORM](https://vincit.github.io/objection.js/)
 
-[![Build Status](https://travis-ci.org/hapipal/schwifty.svg?branch=master)](https://travis-ci.org/hapipal/schwifty) [![Coverage Status](https://coveralls.io/repos/github/hapipal/schwifty/badge.svg?branch=master)](https://coveralls.io/github/hapipal/schwifty?branch=master)
+[![Build Status](https://app.travis-ci.com/hapipal/schwifty.svg?branch=main)](https://app.travis-ci.com/hapipal/schwifty) [![Coverage Status](https://coveralls.io/repos/github/hapipal/schwifty/badge.svg?branch=main)](https://coveralls.io/github/hapipal/schwifty?branch=main)
 
 Lead Maintainer - [Devin Ivy](https://github.com/devinivy)
 
@@ -14,7 +14,7 @@ npm install @hapipal/schwifty
 ## Usage
 > See also the [API Reference](API.md)
 >
-> Schwifty is intended for use with hapi v19+, nodejs v12+, Joi v17+, Objection v1 and v2, and knex v0.16+ (_see v5 for lower support_).
+> Schwifty is intended for use with hapi v19+, nodejs v12+, Joi v17+, Objection v1 through v3, and knex v0.16+ (_see v5 for lower support_).
 
 Schwifty is used to define [Joi](https://joi.dev/)-compatible models and knex connections for use with Objection ORM.  Those models then become available within your hapi server where it is most convenient.  It has been tailored to multi-plugin deployments, where each plugin may set clear boundaries in defining its own models, knex database connections, and migrations.  It's safe to register schwifty multiple times, wherever you'd like to use it, as it protects against model name collisions and other ambiguous configurations.
 
